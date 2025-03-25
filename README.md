@@ -1,24 +1,55 @@
-# Laptop Price Prediction
+# 💻 Laptop Price Prediction  
 
+## (1) Overview  
 
-## (1) Overview
+This project builds a **regression model** to predict laptop prices based on specifications, brands, and operating systems.  
 
-### 1.1 Background
-Our dataset consists of 11,768 observations and 9 columns with the target column being laptop price. The predictors are specifications of the laptop, brands, and operating systems
+✅ **Dataset:** 11,768 laptops, 9 features  
+✅ **Goal:** Predict laptop prices & analyze prediction intervals  
 
-### 1.2 Preprocessing
-Specifications such as GPU, processor are represented as ranks. Resolution is represented as the product of its dimensions (e.g, 1920x1080=1920*1080). Each brand and OS is represented as a binary variable (0 or 1).
-There are no missing values to address, and extreme values are removed.
-### 1.3 Verifying regression assumptions
-Homoscedasticity and normality of residuals is confirmed via plots.
-No auto-correlation of residuals is verified via a 95% CI of the Durbin-Watson statistic
-### 1.4 10-fold CV
-10-fold CV metrics based on MSE, MAE, and R-squared for the model are examined.
-### 1.5 Feature pruning
-95% CIs of coefficients are used to prune features. The observed differences in 10-fold CV are negligible.
-### 1.6 Prediction intervals
-The data is split into training and testing. Prediction intervals of the test set are analyzed. The coverate rate of $y_{test}$ is examined. The distribution of the margins of error and how those margins change with respect to $y_{test}$ are also examined.
+---
 
+## (2) Methodology  
 
+### 🔹 2.1 Data Processing  
+- **Feature Representation:**  
+  - **GPU & Processor** → Ranked categories  
+  - **Resolution** → Pixel count (e.g., 1920×1080 → 2,073,600)  
+  - **Brand & OS** → One-hot encoded  
+- **Data Cleaning:** No missing values, extreme values removed  
 
+### 🔹 2.2 Model Training & Validation  
+- **Regression Assumptions Checked:**  
+  - Homoscedasticity & normality of residuals (visual analysis)  
+  - No autocorrelation (Durbin-Watson test)  
+- **Feature Selection:**  
+  - Pruned features based on **95% confidence intervals of coefficients**  
+  - **Negligible impact** on performance metrics  
+
+### 🔹 2.3 Model Performance  
+- **10-Fold Cross-Validation Metrics:**  
+  - **Mean Squared Error (MSE)**  
+  - **Mean Absolute Error (MAE)**  
+  - **R-squared (R²)**  
+
+### 🔹 2.4 Prediction Intervals  
+- **Train-Test Split Applied**  
+- **90% Prediction Intervals Calculated**  
+- **Coverage Rate of Actual Prices Analyzed**  
+
+---
+
+## (3) Implementation  
+
+### **🔗 Full Implementation in Colab:**  
+[]
+---
+
+## (4) Future Improvements  
+🔹 Test deep learning methods    
+---
+
+## (5) Contact  
+📧 Email: **silasaverybrown@gmail.com**  
+💡 LinkedIn: [Silas Brown](https://www.linkedin.com/in/silas-brown/)  
 
