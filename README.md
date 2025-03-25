@@ -42,7 +42,7 @@ This project builds a **regression model** to predict laptop prices based on spe
 ## (3) Implementation  
 
 ### **🔗 Full Implementation in Colab:**  
-[]
+https://colab.research.google.com/drive/1Mas1-huzLF4Db91OiauHwVFSJJW_uhZv#scrollTo=Mu_J-VuMDapv
 ---
 
 ## (4) Future Improvements  
