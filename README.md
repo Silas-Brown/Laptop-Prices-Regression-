@@ -36,7 +36,7 @@ This project builds a **regression model** to predict laptop prices based on spe
 - **Train-Test Split Applied**  
 - **90% Prediction Intervals Calculated**  
 - **Coverage Rate of Actual Prices Analyzed**
-- - **Distribution of margins of error analyzed**  
+- **Distribution of margins of error analyzed**  
 
 ---
 
