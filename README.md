@@ -15,7 +15,8 @@ This project builds a **regression model** to predict laptop prices based on spe
 - **Feature Representation:**  
   - **GPU & Processor** → Ranked categories  
   - **Resolution** → Pixel count (e.g., 1920×1080 → 2,073,600)  
-  - **Brand & OS** → One-hot encoded  
+  - **Brand & OS** → One-hot encoded
+  - **Weight, Battery life, Screen size, Storage, RAM (GB):** Represented as it is in the raw data 
 - **Data Cleaning:** No missing values, extreme values removed  
 
 ### 🔹 2.2 Model Training & Validation  
